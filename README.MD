@@ -14,6 +14,7 @@
 
 ## Useful info
 * you need to specify files you want to include in the bundle in zoomer.spec (this was done for joinButton.png).
+* using [PyInstaller](https://www.pyinstaller.org/) which hopefully means app will work on PC / MAC or Linux, with an easy installation.
 
 ## Things to do
 * Best we don't add teachers' zoom creds to our git repo ;)
