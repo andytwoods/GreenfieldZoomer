@@ -17,7 +17,7 @@
 * using [PyInstaller](https://www.pyinstaller.org/) which hopefully means app will work on PC, MAC or Linux, with an easy installation.
 * using [PyaAutoGUI](https://automatetheboringstuff.com/2e/chapter20/) to manipulate the operating system into opening up zoom, pasting details in correct places etc.
 
-## Things to do
+## Best to take care of the following
 * Best we don't add teachers' zoom creds to our git repo ;)
 
 ## Things to do
