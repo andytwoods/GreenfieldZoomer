@@ -22,7 +22,6 @@ copy the dist folder to your computer. I created a shortcut to the exe file with
 ![Demo image](creds.PNG)
 
 ## Useful info
-* You need to specify files you want to include in the bundle in zoomer.spec (this was done for joinButton.png).
 * using [PyInstaller](https://www.pyinstaller.org/) which hopefully means app will work on PC, MAC or Linux, with an easy installation.
 
 ## Best to take care of the following
