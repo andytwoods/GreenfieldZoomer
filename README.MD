@@ -24,7 +24,6 @@ copy the dist folder to your computer. I created a shortcut to the exe file with
 ## Useful info
 * You need to specify files you want to include in the bundle in zoomer.spec (this was done for joinButton.png).
 * using [PyInstaller](https://www.pyinstaller.org/) which hopefully means app will work on PC, MAC or Linux, with an easy installation.
-* Using [PyaAutoGUI](https://automatetheboringstuff.com/2e/chapter20/) to manipulate the operating system into opening up zoom, pasting details in correct places etc.
 
 ## Best to take care of the following
 * Best we don't add teachers' zoom creds to our git repo ;)
