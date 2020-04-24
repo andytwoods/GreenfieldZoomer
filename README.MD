@@ -1,5 +1,7 @@
 # Greenfield Zoomer
 
+![Demo image](info.PNG)
+
 ## Installing on your local system
 
 * Clone from github
@@ -13,6 +15,11 @@
 * Use PyInstaller to create a distribution using the zoomer.spec file for instructions
 
 ```pyinstaller zoomer.spec```
+
+## How to use
+copy the dist folder to your computer. I created a shortcut to the exe file within that folder and put it on my desktop. THe first time you run the exe, you'll be asked the below:
+
+![Demo image](creds.PNG)
 
 ## Useful info
 * You need to specify files you want to include in the bundle in zoomer.spec (this was done for joinButton.png).
