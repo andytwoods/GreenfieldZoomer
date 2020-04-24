@@ -9,6 +9,8 @@ from pymsgbox import prompt
 
 
 def join_zoom(meet_id: str, password: str = None):
+    print('')
+    print('launching zoom')
     pyautogui.press('esc', interval=0.1)
 
     time.sleep(0.2)
@@ -27,6 +29,7 @@ def join_zoom(meet_id: str, password: str = None):
     ##this tells the script where to click to join the meeting
 
     x, y = pyautogui.locateCenterOnScreen('joinButton.png')
+    print('finding then clicking join button')
     pyautogui.click(x, y)
     pyautogui.press('enter', interval=.1)
     ## the interval of 1 second is important, if not there, then the meeting id will not be inputted
@@ -34,12 +37,12 @@ def join_zoom(meet_id: str, password: str = None):
     pyautogui.press('enter', interval=.1)
 
     if password:
+        print('entering password')
         time.sleep(.1)
-        pyautogui.press('enter', interval=.1)
+        pyautogui.press('enter', interval=.5)
         pyautogui.write(password)
         pyautogui.press('enter', interval=.1)
-
-    input()
+        print('')
 
 
 def load_details():
@@ -93,10 +96,16 @@ while True:
     teacher = input().lower()
     if teacher == 'x':
         break
-    if type(teacher) is not int:
+    try:
+        teacher_i = int(teacher)
+    except Exception as e:
         print('must be a number')
         print('')
         print('')
         continue
-    my_teacher = teacher_details[int(teacher)]
+    my_teacher = teacher_details[teacher_i]
     join_zoom(my_teacher['id'], my_teacher['pword'])
+    print('press enter to look up another Zoom meeting to join. Enter X to quit.')
+    result = input()
+    if result == 'x':
+        break
