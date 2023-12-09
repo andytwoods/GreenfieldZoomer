@@ -1,5 +1,5 @@
 altgraph==0.17
 pefile==2019.4.18
-PyInstaller==3.6
+PyInstaller==5.13.1
 PyMsgBox==1.0.7
 pyperclip==1.8.0
